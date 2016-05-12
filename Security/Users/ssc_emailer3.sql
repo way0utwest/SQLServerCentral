@@ -1,2 +1,0 @@
-CREATE USER [ssc_emailer3] WITHOUT LOGIN
-GO
