@@ -1,0 +1,11 @@
+{
+  "Id": "27b78263-f921-454e-a36f-5eb63c80e8a9",
+  "Name": "Change SiteStats Column name",
+  "ObjectIds": [
+    {
+      "Name": "SiteStats",
+      "Owner": "dbo",
+      "ObjectType": "Table"
+    }
+  ]
+}

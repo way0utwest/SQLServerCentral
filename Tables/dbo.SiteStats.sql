@@ -1,7 +1,7 @@
 CREATE TABLE [dbo].[SiteStats]
 (
 [StatID] [int] NOT NULL IDENTITY(1, 1),
-[StateDate] [date] NULL CONSTRAINT [DF__SiteStats__State__4589517F] DEFAULT (sysdatetime()),
+[StatEntryDate] [date] NULL CONSTRAINT [DF__SiteStats__State__4589517F] DEFAULT (sysdatetime()),
 [StatMonth] [tinyint] NULL,
 [StatYear] [smallint] NULL,
 [PageVisits] [int] NULL,
