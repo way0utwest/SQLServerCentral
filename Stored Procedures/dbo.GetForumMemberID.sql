@@ -1,0 +1,13 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[GetForumMemberID]
+@SSCUserID INT 
+AS
+SELECT UserID FROM SSCFORUMS.SQLServerCentralForums.dbo.InstantASP_Users
+WHERE SSCUserID = @SSCUserID
+
+GO
+GRANT EXECUTE ON  [dbo].[GetForumMemberID] TO [ssc_webapplication]
+GO
