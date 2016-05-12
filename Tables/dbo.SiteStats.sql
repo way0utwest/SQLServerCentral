@@ -6,7 +6,7 @@ CREATE TABLE [dbo].[SiteStats]
 [StatYear] [smallint] NULL,
 [PageVisits] [int] NULL,
 [TimeOnSite] [time] NULL,
-[Engagement] AS ([PageVisits]*datediff(second,CONVERT([time],'00:00:00',(0)),[TimeOnSite]))
+[Engagement] AS (CONVERT([bigint],[PageVisits],(0))*datediff(second,CONVERT([time],'00:00:00',(0)),[TimeOnSite]))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[SiteStats] ADD CONSTRAINT [PK__SiteStat__3A162D1F2D3977E0] PRIMARY KEY NONCLUSTERED  ([StatID]) ON [PRIMARY]
