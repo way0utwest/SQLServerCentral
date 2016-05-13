@@ -16,6 +16,7 @@ CREATE PROCEDURE [dbo].[LogEvent]
 @UserID INT = -1
 AS
 BEGIN
+SET NOCOUNT ON
 
 INSERT INTO EventLog (
 	[Time],
